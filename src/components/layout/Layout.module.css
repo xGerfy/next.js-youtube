@@ -1,0 +1,41 @@
+@keyframes hideSidebar {
+	from {
+		transform: translateX(0);
+		width: var(--sidebar-width);
+	}
+
+	to {
+		width: 3.8rem;
+		/* transform: translateX(-100%); */
+	}
+}
+
+@keyframes showSidebar {
+	from {
+		width: 3.8rem;
+		/* transform: translateX(-100%); */
+	}
+	to {
+		transform: translateX(0);
+		width: var(--sidebar-width);
+	}
+}
+
+.hidedSidebar > aside {
+	animation: hideSidebar 0.35s forwards;
+	flex-grow: 0;
+}
+
+.hidedSidebar > div {
+	width: 100%;
+}
+
+.hidedSidebar > aside > nav > div:first-child {
+	opacity: 0;
+	transition: 0.3s;
+}
+
+.showedSidebar > aside {
+	animation: showSidebar 0.3s forwards;
+	width: var(--sidebar-width);
+}
