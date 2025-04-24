@@ -7,7 +7,8 @@ import {
 	FolderHeart,
 	Gamepad2,
 	History,
-	Settings
+	Settings,
+	TvMinimalPlay
 } from 'lucide-react'
 
 import type { ISidebarItem } from './sidebar.types'
@@ -28,6 +29,11 @@ export const SIDEBAR_DATA: ISidebarItem[] = [
 		label: 'Video games',
 		link: PUBLIC_PAGE.VIDEO_GAMES,
 		isBottomBorder: true
+	},
+	{
+		icon: TvMinimalPlay,
+		label: 'My chanel',
+		link: PUBLIC_PAGE.MY_CHANEL
 	},
 	{
 		icon: CirclePlay,
