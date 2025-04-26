@@ -1,4 +1,4 @@
-import { PUBLIC_PAGE } from '@/config/public-page.config'
+import { PAGE } from '@/config/public-page.config'
 import { COLORS } from '@/constants/colors.constants'
 import { Menu, SquarePlay } from 'lucide-react'
 import Link from 'next/link'
@@ -14,7 +14,7 @@ export function SidebarHeader({ toggleSidebar }: { toggleSidebar: () => void }) 
 			</button>
 
 			<Link
-				href={PUBLIC_PAGE.HOME}
+				href={PAGE.HOME}
 				className='flex items-center gap-1.5'
 			>
 				<SquarePlay
