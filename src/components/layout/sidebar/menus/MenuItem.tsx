@@ -13,7 +13,7 @@ export function MenuItem({ item, isActive }: Props) {
 		<li>
 			<Link
 				href={item.link}
-				className='group py-2 flex items-center gap-5 '
+				className='group py-2 flex items-center gap-5'
 			>
 				<item.icon
 					className={cn('transition duration-300 ease-in-out min-w-6', {

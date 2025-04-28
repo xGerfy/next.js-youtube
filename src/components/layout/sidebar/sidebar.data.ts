@@ -33,7 +33,7 @@ export const SIDEBAR_DATA: ISidebarItem[] = [
 	{
 		icon: TvMinimalPlay,
 		label: 'My chanel',
-		link: PAGE.MY_CHANEL
+		link: PAGE.MY_CHANNEL
 	},
 	{
 		icon: CirclePlay,

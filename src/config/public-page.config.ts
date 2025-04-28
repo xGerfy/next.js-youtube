@@ -5,7 +5,7 @@ class PublicPage {
 
 	SEARCH = '/search'
 
-	MY_CHANEL = '/my-chanel'
+	MY_CHANNEL = '/my-channel'
 	SUBSCRIPTIONS = '/subscriptions'
 	HISTORY = '/history'
 	LIKED_VIDEOS = '/liked-videos'
@@ -14,11 +14,11 @@ class PublicPage {
 	FEEDBACK = '/feedback'
 
 	VIDEO(path: string) {
-		return `/v${path}`
+		return `/v/${path}`
 	}
 
 	CHANNEL(path: string) {
-		return `/c${path}`
+		return `/c/${path}`
 	}
 }
 
