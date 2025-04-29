@@ -10,7 +10,10 @@ const notoSans = Noto_Sans({
 })
 
 export const metadata: Metadata = {
-	title: 'Next.js youtube',
+	title: {
+		absolute: 'YouTube',
+		template: `%s | YouTube`
+	},
 	description: 'Best app for video watching'
 }
 
