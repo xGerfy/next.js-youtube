@@ -29,7 +29,7 @@ export default async function Home() {
 			<section className='mb-10'>
 				<Heading Icon={Flame}>Trending</Heading>
 				<div className='grid grid-cols-6 gap-6'>
-					{data.data &&
+					{!!data.data &&
 						data.data.map(video => (
 							<VideoItem
 								key={video.id}
