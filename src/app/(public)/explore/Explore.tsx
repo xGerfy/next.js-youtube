@@ -22,14 +22,15 @@ export function Explore() {
 						count={6}
 						className='h-36 rounded-md'
 					/>
-				) : (
-					!!data?.data.videos.length &&
+				) : !!data?.data.videos.length ? (
 					data.data.videos.map(video => (
 						<VideoItem
 							key={video.id}
 							video={video}
 						/>
 					))
+				) : (
+					<div>Explore are temporarily unavailable</div>
 				)}
 			</div>
 		</section>
