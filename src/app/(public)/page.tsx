@@ -9,7 +9,7 @@ import { Explore } from './explore/Explore'
 export const revalidate = 100
 
 export const metadata: Metadata = {
-	title: 'YouTube',
+	title: 'Explore',
 	description: 'Best video platform',
 	alternates: {
 		canonical: '/'
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: 'website',
 		url: '/',
-		title: 'YouTube'
+		title: 'Explore'
 	}
 }
 

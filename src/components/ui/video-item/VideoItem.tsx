@@ -2,6 +2,7 @@ import { PAGE } from '@/config/public-page.config'
 import type { IVideo } from '@/types/video.types'
 import { transformDate } from '@/utils/transform-date'
 import { transformViews } from '@/utils/transform-views'
+import * as m from 'framer-motion/m'
 import { BadgeCheck, type LucideIcon } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -13,7 +14,17 @@ interface Props {
 
 export function VideoItem({ video, Icon }: Props) {
 	return (
-		<div>
+		<m.div
+			whileHover={{
+				scale: 1.03,
+				y: -5
+			}}
+			transition={{
+				type: 'spring',
+				stiffness: 500,
+				damping: 30
+			}}
+		>
 			<div className='relative mb-1.5'>
 				<Link href={PAGE.VIDEO(video.publicId)}>
 					<Image
@@ -75,6 +86,6 @@ export function VideoItem({ video, Icon }: Props) {
 					)}
 				</Link>
 			</div>
-		</div>
+		</m.div>
 	)
 }
