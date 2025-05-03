@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import { Auth } from './Auth'
 
 export const metadata: Metadata = {
-	title: '',
+	title: 'Authorization',
 	...NO_INDEX_PAGE
 }
 
